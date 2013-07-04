@@ -1,0 +1,16 @@
+<div id="window-state">
+	<header>
+		<h1>SEARCH</h1>
+	</header>
+	<input type="text" name="movie-search" id="movie-search">
+	<input type="submit" id="submit-search">
+</div>
+<script>
+$(function(){
+	$("#submit-search").click(function(e){
+		var search = $("#movie-search").val()
+		console.log($("#movie-search").text())
+		window.location.hash = "#movie:search="+encodeURIComponent(search)
+	})
+})
+</script>

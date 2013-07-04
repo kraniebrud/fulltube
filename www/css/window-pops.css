@@ -1,0 +1,163 @@
+/*window-pop*/
+	#window-pop{
+		position: absolute;
+		z-index: 9999;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.59);
+		display: none;
+	}
+	#window-pop article{
+		position: relative;
+		margin: 0 auto;
+		box-shadow: 0 0 20px #000;
+		background-color: #f1f1f1;
+		padding: 1em;
+		transition: top 0.3s;
+		width: 600px;
+	}
+	#window-pop.active{
+		display: block;
+	}
+	#window-pop.active article{
+		top: 10%;
+		margin-top: -1em;
+	}
+	#window-pop article > img{
+		height: 80%;
+	}
+/**/
+#window-pop header{
+	padding-bottom: 0.5em;
+}
+#window-pop h1{
+	margin: 0.3em 0;
+	font-size: 1.5em;
+	line-height: 1.3em;
+}
+#window-pop h2{
+	font-size: 1em;
+	margin: 0.2em 0;
+	color: #777;
+	font-style: italic;
+	line-height: 1.3em;
+}
+#window-pop h3{
+	font-size: 1em;
+	line-height: 1.5em;
+}
+#window-pop p{
+	font-size: 0.8em;
+	line-height: 1.8em;
+}
+#window-pop label{
+	display: block;
+	font-weight: bold;
+	margin-top: 1em;
+}
+#window-pop input, #window-pop select{
+	padding: 0.2em;
+	font-size: 1.3em;
+	margin: 0.5em 0;
+	border: 1px solid #777;
+	display: block;
+	color: #777;
+	min-width: 15em;
+}
+#window-pop input[type="submit"]{
+	min-width: 7em;
+	font-size: 0.9em;
+	margin: 1em 0;
+	padding: 0.5em;
+	color: #222;
+	background-color: rgb(112, 206, 112);
+}
+#window-pop .row{
+	width: 290px;
+	float: left;
+	margin-left: 5px;
+}
+#window-pop footer{
+	margin-top: 4em;
+	padding: 1em 1em 0 1em;
+	clear: both;
+	border-top: 1px solid #888;
+}
+#window-pop li{
+	display: block;
+	margin: 0.3em 0;
+}
+#window-pop li a{
+	display: block;
+	padding: 0.4em;
+	font-size: 1.2em;
+	background-color: #ccc;
+	color: #222;
+	text-decoration: none;
+	transition: background-color 1s;
+}
+#window-pop li a:hover, #window-pop li a.active{
+	background-color: rgb(112, 206, 112);
+}
+#window-pop li a span{
+	padding: 0.3em;
+	background-color: #fff;
+	float: right;
+	border-radius: .5em;
+	line-height: .8em;
+	font-size: .8em;
+}
+#window-pop #load{
+	font-size: 2em;
+	text-align: center;
+}
+#window-pop select{
+	font-size: 1em;
+	padding: 0.3em;
+	color: #222;
+	background-color: #ccc;
+}
+/*MESSAGES*/
+#window-message{
+	position: relative;
+}
+#window-message:before{
+	font-family: fontawesome;
+	display: block;
+	font-size: 2.5em;
+	position: absolute;
+	left: .2em;
+}
+.error{
+	background-color: rgb(240, 132, 71);
+	padding: 0.5em;
+	border: 1px solid rgb(213, 59, 59);
+	padding-left: 4em;
+}
+.error:before{
+	content: "\f071";
+}
+/*ACCOUNT*/
+/*ACCOUNT MENU*/
+.window-account h1 a{
+	font-size: 2em;
+	color: #222;
+	text-decoration: none;
+	padding: .3em;
+	margin-bottom: 2em;
+}
+#account-menu{
+	height: 2em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #888;
+}
+#account-menu ul li{
+	float: left;
+	padding: 0 .7em;
+}
+#account-menu ul li a{
+	font-size: 1em;
+}
+#account-content{
+	padding-top: 10%;
+}
