@@ -19,7 +19,7 @@ $(function() {
 		var youtubeUrl = $(this).attr('href')
 		$.ajax({
 			type: "GET",
-			url: "/fulltube/windows/player/youtube.php",
+			url: "/fulltube/www/windows/player/youtube.php",
 			data: {video: youtubeUrl }
 		}).done(function(output){
 			windowPop.addClass('active')
@@ -44,22 +44,22 @@ $(function() {
 	/*ADD MOVIE*/
 	$("#add-movie").click(function(e){
 		e.preventDefault()
-		popWindow("/fulltube/windows/movie/add-movie.php", "600px")
+		popWindow("/fulltube/www/windows/movie/add-movie.php", "600px")
 	})
 	/*REORDER*/
 	$("#reorder, #movie-order a.change-order").click(function(e){
 		e.preventDefault()
-		popWindow("/fulltube/windows/movie/reorder.html")
+		popWindow("/fulltube/www/windows/movie/reorder.html")
 	})
 	/*SEARCH*/
 	$("#search").click(function(e){
 		e.preventDefault()
-		popWindow("/fulltube/windows/movie/search.html")
+		popWindow("/fulltube/www/windows/movie/search.html")
 	})
 	/*account*/
 	$("#account").click(function(e){
 		e.preventDefault()
-		popWindow("/fulltube/windows/account/account.php")
+		popWindow("/fulltube/www/windows/account/account.php")
 	})
 	function popWindow(popThisUrl, windowSize){
 		$.ajax({

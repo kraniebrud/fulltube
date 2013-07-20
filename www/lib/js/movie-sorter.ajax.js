@@ -18,7 +18,7 @@ function movieOrders(movieOrder){
 	windowState.append().html('<div id="load"><i class="icon-spinner icon-spin .icon-3x"></i></div>')
 	$.ajax({
 		type: "GET",
-		url: "/fulltube/movielist.php",
+		url: "/fulltube/www/movielist.php",
 		data: {movie: movieOrder}
 	}).done(function(moviesReturned){
 		movieHolder.html(moviesReturned)
