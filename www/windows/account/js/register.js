@@ -9,7 +9,7 @@ $(function() {
 		submit_email = $("#email").val()
 		$.ajax({
 			type: "POST",
-			url: "/fulltube/windows/account/process/register.php",
+			url: "/fulltube/www/windows/account/process/register.php",
 			data: {username: submit_username, password: submit_password, email: submit_email}
 		}).done(function(output){
 			if(output != "success"){

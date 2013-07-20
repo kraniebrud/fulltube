@@ -6,7 +6,7 @@ $(function() {
 	$("#logout-user").click(function(e){
 		$.ajax({
 			type: "GET",
-			url: "/fulltube/windows/account/process/logout.php"
+			url: "/fulltube/www/windows/account/process/logout.php"
 		}).done(function(output){
 			location.reload()
 		})

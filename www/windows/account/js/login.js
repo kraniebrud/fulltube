@@ -8,7 +8,7 @@ $(function() {
 		submit_password = $("#password").val()
 		$.ajax({
 			type: "POST",
-			url: "/fulltube/windows/account/process/login.php",
+			url: "/fulltube/www/windows/account/process/login.php",
 			data: {username: submit_username, password: submit_password}
 		}).done(function(output){
 			if(output != "success"){
@@ -16,7 +16,7 @@ $(function() {
 			}else{
 				$.ajax({
 					type: "GET",
-					url: "/fulltube/windows/account/account.php"
+					url: "/fulltube/www/windows/account/account.php"
 				}).done(function(output){
 					window.location.href = '/fulltube'
 				})
@@ -28,7 +28,7 @@ $(function() {
 		e.preventDefault()
 		$.ajax({
 			type: "GET",
-			url: "/fulltube/windows/account/register.php"
+			url: "/fulltube/www/windows/account/register.php"
 		}).done(function(output){
 			windowState.html(output)
 		})

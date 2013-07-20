@@ -13,7 +13,7 @@ $(function() {
 		$.ajax({
 			type: "GET",
 			data: {movie_id: movieID, favorite: to_favorite},
-			url: "/fulltube/windows/account/process/movie-feature.php"
+			url: "/fulltube/www/windows/account/process/movie-feature.php"
 		}).done(function(output){
 			if(location.hash.toLowerCase().indexOf("favorite") != -1){
 				var to_remove = $("#movie-list #"+movieID).parent()
@@ -47,7 +47,7 @@ $(function() {
 				$.ajax({
 					type: "GET",
 					data: {movie_id: movieID, personal_rating: rating},
-					url: "/fulltube/windows/account/process/movie-feature.php"
+					url: "/fulltube/www/windows/account/process/movie-feature.php"
 				}).done(function(output){
 					//nothing to do ??....
 				})
