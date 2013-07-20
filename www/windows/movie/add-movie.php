@@ -22,4 +22,4 @@
 	<?php endforeach; ?>
 	</select>
 	<input type="submit" id="lookup-movie" value="Lookup movie">
-<script type="text/javascript" src="/fulltube/windows/movie/add-movie.js"></script>
+<script type="text/javascript" src="/fulltube/www/windows/movie/add-movie.js"></script>

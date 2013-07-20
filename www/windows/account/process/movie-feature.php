@@ -3,7 +3,7 @@
 	if(!(isset($_SESSION['user']))){
 		die("YOU NEED TO BE LOGGED IN ORDER ORDER TO USE THIS FEATURE");
 	}
-	require_once($_SERVER['DOCUMENT_ROOT']."/fulltube/lib/php/db.php");
+	require_once($_SERVER['DOCUMENT_ROOT']."/fulltube/www/lib/php/db.php");
 	$db = new db();
 	$movie_id = addslashes($_GET['movie_id']);
 	$movie_feature = $db->row("SELECT favorite, personal_rating, movie_list_id FROM movie_feature WHERE movie_id=".$movie_id. " AND user_id=".$_SESSION['user']['id']);

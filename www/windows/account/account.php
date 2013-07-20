@@ -13,7 +13,7 @@
 			<a href="#logout" id="logout-user" class="button"><i class="icon-signout"></i> Logout</a>
 		</footer>
 	</div>
-	<script type="text/javascript" src="/fulltube/windows/account/js/account.js"></script>
+	<script type="text/javascript" src="/fulltube/www/windows/account/js/account.js"></script>
 <?php
 	else:
 		include('login.php');
