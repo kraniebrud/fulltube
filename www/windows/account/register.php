@@ -17,4 +17,4 @@
 		<p>add new movies or make movie lists.</p>
 	</footer>
 </div>
-<script type="text/javascript" src="/fulltube/windows/account/js/register.js"></script>
+<script type="text/javascript" src="/fulltube/www/windows/account/js/register.js"></script>

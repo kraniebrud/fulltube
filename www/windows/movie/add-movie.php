@@ -3,7 +3,7 @@
 	if(!isset($_SESSION['user'])){
 		die("This feature is not avaible while not logged in");
 	}
-	require_once($_SERVER['DOCUMENT_ROOT']."/fulltube/lib/php/db.php");
+	require_once($_SERVER['DOCUMENT_ROOT']."/fulltube/www/lib/php/db.php");
 	$db = new db();
 	$video_qualities = $db->assoc("SELECT id, resolution FROM quality");
 ?>

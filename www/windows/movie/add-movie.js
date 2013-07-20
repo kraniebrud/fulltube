@@ -11,7 +11,7 @@ $(function() {
 		setTimeout(function(){
 			$.ajax({
 				type: "POST",
-				url: "/fulltube/windows/movie/process/movie-fetcher.php",
+				url: "/fulltube/www/windows/movie/process/movie-fetcher.php",
 				data: {search: movieTitle, youtube_url: youtubeUrl, quality_id: videoQuality_id}
 //confirm movie request
 			}).done(function(msg){
@@ -23,10 +23,10 @@ $(function() {
 					setTimeout(function(){
 						$.ajax({
 							type: "POST",
-							url: "/fulltube/windows/movie/process/store-movie.php",
+							url: "/fulltube/www/windows/movie/process/store-movie.php",
 							data: {href: movieToAdd}
 						}).done(function(msg){
-							window.location.href = '/fulltube'
+							window.location.href = '/fulltube/www'
 							//windowState.html(msg)
 						})
 					},3000)

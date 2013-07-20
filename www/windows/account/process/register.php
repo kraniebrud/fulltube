@@ -1,5 +1,5 @@
 <?php
-	require_once($_SERVER['DOCUMENT_ROOT']."/fulltube/lib/php/db.php");
+	require_once($_SERVER['DOCUMENT_ROOT']."/fulltube/www/lib/php/db.php");
 	$db = new db();
 	$username = addslashes($_POST['username']);
 	$password = addslashes($_POST['password']);

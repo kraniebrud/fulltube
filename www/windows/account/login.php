@@ -15,4 +15,4 @@
 		<a href="#register-user" id="register-user" class="button">Register user</a>
 	</footer>
 </div>
-<script type="text/javascript" src="/fulltube/windows/account/js/login.js"></script>
+<script type="text/javascript" src="/fulltube/www/windows/account/js/login.js"></script>
